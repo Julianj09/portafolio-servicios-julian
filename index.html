@@ -6,38 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Julian Tabaco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Julian Tabaco - Desarrollador Front-End">
     <meta property="og:type" content="website">
 
-    <link rel="shortcut icon" href="assets/img/logo-portafolio-julian.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/logo-portafolio-julian.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <title>Julian T. Portafolio</title>
+    <title>Julian T. | Portafolio</title>
 
-    <link rel="stylesheet" href="assets/styles/reset.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/menu.css">
-    <link rel="stylesheet" href="assets/styles/hero.css">
-    <link rel="stylesheet" href="assets/styles/about.css">
-    <link rel="stylesheet" href="assets/styles/skills.css">
-    <link rel="stylesheet" href="assets/styles/education.css">
-    <link rel="stylesheet" href="assets/styles/projects.css">
-    <link rel="stylesheet" href="assets/styles/contact.css">
-    <link rel="stylesheet" href="assets/styles/footer.css">
-
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
 
     <!-- SweetAlert2 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
 </head>
 
 <body>
-    <!-- Menú  -->
+    <!-- Menú -->
     <header class="menu container">
         <h2 class="menu__logo">Julian T.</h2>
         <input type="checkbox" id="menu__bar">
@@ -45,7 +35,7 @@
         <nav>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
-                <li class="menu__item"><a class="menu__link" href="#skills">Skills y Hobbies</a></li>
+                <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
                 <li class="menu__item"><a class="menu__link" href="#education">Formación</a></li>
                 <li class="menu__item"><a class="menu__link" href="#projects">Proyectos</a></li>
                 <li class="menu__item"><a class="menu__link" href="#contact">Contacto</a></li>
@@ -53,269 +43,68 @@
         </nav>
     </header>
 
-    <!-- Sección del Header/Title/Hero -->
+    <!-- Hero Section -->
     <section class="hero container">
-        <div class="hero__container">
-            <h1 class="hero__title">Hola, soy Julian Tabaco.</h1>
-            <p class="hero__description">
-                "Actualmente, me dedico principalmente al desarrollo Front-End, donde me apasiona crear experiencias
-                únicas, centradas por completo en mejorar la interacción del usuario."
-            </p>
-            <ul class="hero__social">
-                <li class="hero__item"><a href="assets/cvJulian.pdf" target="_blank" class="hero__link hero__link--cv">Curriculum <i
-                            class="uil uil-external-link-alt"></i></a></li>
-                <li class="hero__item"><a href="https://www.linkedin.com/in/didier-julian-tabaco-duran-619069312/"
-                        target="_blank" class="hero__link hero__link--linkedin">LinkedIn <i
-                            class="uil uil-linkedin"></i></a></li>
-                <li class="hero__item"><a href="https://github.com/Julian090104" target="_blank"
-                        class="hero__link hero__link--github">Github <i class="uil uil-github"></i></a></li>
-            </ul>
-        </div>
-        <img src="assets/img/Personal/IMG_1320_UP_F.png" alt="Foto de perfil" class="hero__profile"
-            fetchpriority="high">
+        <!-- Contenido dinámico -->
     </section>
 
-    <!-- Sección sobre mi -->
     <main>
+        <!-- About Section -->
         <section class="about container" id="about">
             <div class="about__container">
-                <div class="about__text">
-                    <h3 class="about__title">Sobre mí</h3>
-                    <p class="about__description">
-                        Soy programador originario de Nunchía, Casanare, actualmente estudiando Ingeniería en
-                        Sistemas
-                        en la Universidad de Pamplona, Colombia. A lo largo de mi trayectoria, he participado en
-                        diversos proyectos que abarcan el desarrollo de páginas web y aplicaciones de escritorio. Me
-                        especializo tanto en el desarrollo frontend como en el backend, incluyendo la gestión de
-                        bases
-                        de datos.
-                        <br><br>
-                        Me encuentro haciendo especialización en Frontend con Alura Latam
-                    </p>
-                </div>
-                <div class="about__img">
-                    <figure>
-                        <img src="assets/img/about/developer-1.png" alt="Imagen de tipo ilustrativa"
-                            class="about__img--optional" loading="lazy">
-                    </figure>
-                </div>
+                <!-- Contenido dinámico -->
             </div>
         </section>
 
-
-        <!-- Sección de Skills -->
+        <!-- Skills Section -->
         <section class="skills container" id="skills">
             <div class="skills__tech">
                 <h3 class="skills__title">Skills</h3>
                 <div class="skills__container">
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/html5.svg" alt="Logo de HTML5">
-                        <span class="skills__text">HTML5</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/css3.svg" alt="Logo de CSS3">
-                        <span class="skills__text">CSS3</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/javascript.svg" alt="Logo de Javascript">
-                        <span class="skills__text">Javascript</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/java.svg" alt="Logo de java">
-                        <span class="skills__text">Java</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/eclipse.svg" alt="Logo de Eclipse">
-                        <span class="skills__text">Eclipse</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/VScode.svg" alt="Logo de visual studio code">
-                        <span class="skills__text">VScode</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/VScommunity.svg"
-                            alt="Logo de visual studio code">
-                        <span class="skills__text">VScommunity</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/git.svg" alt="Logo de Git">
-                        <span class="skills__text">Git</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/python.svg" alt="Logo de python">
-                        <span class="skills__text">Python</span>
-                    </div>
-                    <div class="skills__box">
-                        <img class="skills__img" src="assets/img/Skills/jupyter.svg" alt="Logo de Jupyter">
-                        <span class="skills__text">Jupyther</span>
-                    </div>
+                    <!-- Contenido dinámico -->
                 </div>
             </div>
 
-            <!-- Sección de Skills__Hobbies -->
             <div class="skills__hobbies">
                 <h3 class="skills__title">Hobbies</h3>
-                <div class="skills__container skills__container--hobbies">
-                    <div class="skills__box--hobbies">
-                        <span class="skills__text">Jugar videojuegos</span>
-                        <img class="skills__img--hobbies" src="assets/img/Hobbies/videogame.svg"
-                            alt="Icon de control para videojuego">
-                    </div>
-                    <div class="skills__box--hobbies">
-                        <span class="skills__text">Ver videos</span>
-                        <img class="skills__img--hobbies" src="assets/img/Hobbies/youtube.svg" alt="Icon de Youtube">
-                    </div>
-                    <div class="skills__box--hobbies">
-                        <span class="skills__text">Aprender</span>
-                        <img class="skills__img--hobbies" src="assets/img/Hobbies/aprender.svg" alt="Icon de cerebro">
-                    </div>
+                <div class="skills__container">
+                    <!-- Contenido dinámico -->
                 </div>
             </div>
         </section>
 
-        <!-- Sección de Formación académica -->
+        <!-- Education Section -->
         <section class="education container" id="education">
             <h3 class="education__title">Educación</h3>
             <div class="education__container">
-                <details>
-                    <summary>
-                        <span class="summary-title">Especialización FrontEnd <br><br> 2024 - Presente</span>
-                        <div class="summary-chevron-up">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-chevron-down">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </div>
-                    </summary>
-                    <div class="summary-content">
-                        Programa Oracle Next Education con Alura Latam
-                    </div>
-                    <div class="summary-chevron-down">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-chevron-up">
-                            <polyline points="18 15 12 9 6 15"></polyline>
-                        </svg>
-                </details>
-                <details>
-                    <summary>
-                        <span class="summary-title">Google Ciberseguridad & IA <br><br> 2024 - Presente</span>
-                        <div class="summary-chevron-up">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-chevron-down">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </div>
-                    </summary>
-                    <div class="summary-content">
-                        Google-Coursera
-                    </div>
-                    <div class="summary-chevron-down">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-chevron-up">
-                            <polyline points="18 15 12 9 6 15"></polyline>
-                        </svg>
-                </details>
-                <details>
-                    <summary>
-                        <span class="summary-title">Ingenieria en Sistemas <br><br> 2021 - Presente</span>
-                        <div class="summary-chevron-up">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-chevron-down">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </div>
-                    </summary>
-                    <div class="summary-content">
-                        Universidad de Pamplona, Colombia
-                    </div>
-                    <div class="summary-chevron-down">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-chevron-up">
-                            <polyline points="18 15 12 9 6 15"></polyline>
-                        </svg>
-                </details>
+                <!-- Contenido dinámico -->
             </div>
         </section>
 
-        <!-- Sección de Proyectos -->
+        <!-- Projects Section -->
         <section class="projects container" id="projects">
             <h3 class="projects__title">Proyectos</h3>
             <div class="projects__container">
-                <div class="projects__card">
-                    <img src="assets/img/Proyects/encriptador-web.png" alt="Proyecto Encriptador" class="projects__img"
-                        loading="lazy">
-                    <div class="projects__content">
-                        <div class="projects__content--skills">
-                            <img src="assets/img/Skills/html5.svg" alt="Icon de HTML">
-                            <img src="assets/img/Skills/css3.svg" alt="Icon de CSS">
-                            <img src="assets/img/Skills/javascript.svg" alt="Icon de Javascript">
-                        </div>
-                        <h3 class="projects__content--title">Encriptador de texto</h3>
-                        <p class="projects__content--description">Proyecto hecho con HTML5, CSS3 y Javascript. Encripta
-                            cualquier texto reemplazando las vocales por alguna palabra corta. No se permite ingresar
-                            mayúsculas, acentos o cualquier caracter especial. También es posible desencriptar textos
-                            que ya han sido encriptados.
-                            Fue el primer challenge del programa Oracle Next Education con Alura Latam.</p>
-                        <div class="projects__content--buttons">
-                            <a class="projects__link projects__link--repo"
-                                href="https://github.com/Julian090104/encriptador-web" target="_blank">Repositorio
-                                <i class="uil uil-github"></i></a>
-                            <a class="projects__link projects__link--demo"
-                                href="https://julian090104.github.io/encriptador-web/" target="_blank">Ver demo <i
-                                    class="uil uil-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects__card">
-                    <img src="assets/img/Proyects/barberia-web.png" alt="Proyecto Encriptador" class="projects__img"
-                        loading="lazy">
-                    <div class="projects__content">
-                        <div class="projects__content--skills">
-                            <img src="assets/img/Skills/html5.svg" alt="Icon de HTML">
-                            <img src="assets/img/Skills/css3.svg" alt="Icon de CSS">
-                        </div>
-                        <h3 class="projects__content--title">Web Barberia</h3>
-                        <p class="projects__content--description">
-                            Proyecto hecho con HTML5, CSS3 y JavaScript. Consiste en una página web básica para una
-                            barbería que incluye una navegación con secciones de Home, Productos y Contacto. El proyecto
-                            aborda conceptos de estructura de documentos con HTML, estilos y diseño responsive con CSS.
-                            Fue un proyecto hecho durante el programa Oracle Next Education con Alura Latam.
-                        </p>
-                        <div class="projects__content--buttons">
-                            <a class="projects__link projects__link--repo"
-                                href="https://github.com/Julian090104/barberia-alura" target="_blank">Repositorio
-                                <i class="uil uil-github"></i></a>
-                            <a class="projects__link projects__link--demo"
-                                href="https://julian090104.github.io/barberia-alura/" target="_blank">Ver demo <i
-                                    class="uil uil-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Contenido dinámico -->
             </div>
         </section>
 
-        <!-- Sección de contacto -->
+        <!-- Contact Section -->
         <section class="contact container" id="contact">
             <div class="contact__container">
                 <h3 class="contact__title">¿Tienes una idea? Contáctame</h3>
                 <form id="form">
                     <div class="field">
-                        <label for="Nombre">Nombre</label>
+                        <label for="nombre">Nombre</label>
                         <input type="text" name="Nombre" id="nombre" required placeholder="Tu nombre">
                         <div class="contact__error contact__error--nombre"></div>
-                        <div id="nombre-counter"></div>
+                        <div id="nombre-counter" class="counter"></div>
                     </div>
                     <div class="field">
-                        <label for="Asunto">Asunto</label>
+                        <label for="asunto">Asunto</label>
                         <input type="text" name="Asunto" id="asunto" required placeholder="Asunto del correo">
                         <div class="contact__error contact__error--asunto"></div>
-                        <div id="asunto-counter"></div>
+                        <div id="asunto-counter" class="counter"></div>
                     </div>
                     <div class="field">
                         <label for="email">Email</label>
@@ -323,57 +112,39 @@
                         <div class="contact__error contact__error--email"></div>
                     </div>
                     <div class="field">
-                        <label for="Mensaje">Mensaje</label>
+                        <label for="mensaje">Mensaje</label>
                         <textarea name="Mensaje" id="mensaje" required placeholder="Escribe tu mensaje"></textarea>
                         <div class="contact__error contact__error--mensaje"></div>
-                        <div id="mensaje-counter"></div>
+                        <div id="mensaje-counter" class="counter"></div>
                     </div>
-                    <input type="submit" id="button" value="Send Email">
+                    <button type="submit" id="button" class="btn btn--primary">Enviar Mensaje</button>
                 </form>
             </div>
             <figure class="contact__img">
-                <img src="assets/img/about/developer-3.png" alt="Imagen tipo 3D ilustrativa" loading="lazy">
+                <img src="assets/images/about/developer-3.png" alt="Ilustración contacto" loading="lazy">
             </figure>
         </section>
-
     </main>
 
+    <!-- Footer -->
     <footer class="footer container">
         <p class="footer__copy">&copy; Desarrollado por Julian Tabaco 2024</p>
         <div class="footer__social">
-            <a href="https://www.linkedin.com/in/didier-julian-tabaco-duran-619069312/" target="_blank"><i
-                    class="uil uil-linkedin"></i></a>
-            <a href="https://github.com/Julian090104" target="_blank"><i class="uil uil-github"></i></a>
-            <a href="mailto:djulian_090104@gmail.com"><i class="uil uil-envelope"></i></a>
+            <!-- Contenido dinámico -->
         </div>
     </footer>
 
-    <!-- Uso de emailjs para contactarme -->
+    <!-- Scripts Externos -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- EmailJS Config -->
     <script type="text/javascript">
         emailjs.init('IlK98jQ2eFKY1Ncg3')
     </script>
-    <script src="assets/js/validacion.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        ScrollReveal({
-            reset: false,
-            distance: '60px',
-            duration: 2500,
-            delay: 400
-        });
 
-        ScrollReveal().reveal('.hero__profile', { delay: 100, origin: 'bottom' });
-        ScrollReveal().reveal('.hero__title, .hero__sub, .hero__description', { delay: 100, origin: 'left' });
-        ScrollReveal().reveal('.hero__social li', { delay: 100, origin: 'bottom', interval: 200 });
-        ScrollReveal().reveal('.about__text', { delay: 100, origin: 'left' });
-        ScrollReveal().reveal('.about__img', { delay: 100, origin: 'bottom' });
-        ScrollReveal().reveal('.skills__tech', { delay: 100, origin: 'bottom' });
-        ScrollReveal().reveal('.skills__hobbies', { delay: 50, origin: 'bottom' });
-        ScrollReveal().reveal('details', { delay: 50, origin: 'bottom' });
-        ScrollReveal().reveal('.projects__img', { delay: 200, origin: 'left' });
-    </script>
+    <!-- Entry Point -->
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

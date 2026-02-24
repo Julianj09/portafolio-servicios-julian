@@ -1,0 +1,58 @@
+.skill-badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    background: #fff;
+    transition: var(--transition);
+}
+
+.skill-badge:hover {
+    background-color: var(--color-azul-medio-claro);
+    transform: translateY(-5px);
+}
+
+.skill-badge__img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.skill-badge__name {
+    font-weight: 700;
+    color: var(--color-cenizo-46);
+    font-size: 0.9rem;
+}
+
+/* Hobby Badge */
+.hobby-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-azul-medio-claro);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.hobby-badge:hover {
+    background-color: var(--color-verde-claro);
+}
+
+.hobby-badge__img {
+    height: 1.2rem;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.hobby-badge__name {
+    font-weight: 600;
+    color: var(--color-cenizo-46);
+    font-size: 0.95rem;
+}

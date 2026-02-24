@@ -1,0 +1,54 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 380px) {
+    .btn {
+        width: 100%;
+    }
+}
+
+.btn--primary {
+    background: var(--color-verde);
+    color: var(--color-cenizo-46);
+}
+
+.btn--primary:hover {
+    background: var(--color-azul-medio);
+}
+
+.btn--secondary {
+    background: var(--color-azul-claro);
+    color: var(--color-cenizo-46);
+}
+
+.btn--secondary:hover {
+    background: var(--color-verde);
+}
+
+.btn--outline {
+    background: transparent;
+    border: 2px solid var(--color-verde);
+    color: var(--color-cenizo-46);
+}
+
+.btn--outline:hover {
+    background: var(--color-verde);
+    color: #fff;
+}
+
+.btn i {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,58 @@
+{
+    "tech": [
+        {
+            "name": "HTML5",
+            "icon": "assets/images/Skills/html5.svg"
+        },
+        {
+            "name": "CSS3",
+            "icon": "assets/images/Skills/css3.svg"
+        },
+        {
+            "name": "Javascript",
+            "icon": "assets/images/Skills/javascript.svg"
+        },
+        {
+            "name": "Java",
+            "icon": "assets/images/Skills/java.svg"
+        },
+        {
+            "name": "Eclipse",
+            "icon": "assets/images/Skills/eclipse.svg"
+        },
+        {
+            "name": "VScode",
+            "icon": "assets/images/Skills/VScode.svg"
+        },
+        {
+            "name": "VScommunity",
+            "icon": "assets/images/Skills/VScommunity.svg"
+        },
+        {
+            "name": "Git",
+            "icon": "assets/images/Skills/git.svg"
+        },
+        {
+            "name": "Python",
+            "icon": "assets/images/Skills/python.svg"
+        },
+        {
+            "name": "Jupyther",
+            "icon": "assets/images/Skills/jupyter.svg"
+        }
+    ],
+    "hobbies": [
+        {
+            "name": "Jugar videojuegos",
+            "icon": "assets/images/Hobbies/videogame.svg"
+        },
+        {
+            "name": "Ver videos",
+            "icon": "assets/images/Hobbies/youtube.svg"
+        },
+        {
+            "name": "Aprender",
+            "icon": "assets/images/Hobbies/aprender.svg"
+        }
+    ]
+}

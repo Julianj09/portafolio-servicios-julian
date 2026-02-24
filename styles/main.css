@@ -1,0 +1,32 @@
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+@import 'layout/header.css';
+@import 'layout/footer.css';
+@import 'layout/sections.css';
+@import 'components/buttons.css';
+@import 'components/card.css';
+@import 'components/badge.css';
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Global utilities */
+.container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Base structural layout for sections */
+section.container,
+main .container,
+footer.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}

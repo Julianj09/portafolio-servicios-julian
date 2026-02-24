@@ -1,0 +1,70 @@
+:root {
+    /* Colors - Brand */
+    --background-blanco: #ffffff;
+    --color-primario-verde-oscuro-5: #008646;
+    --color-primario-verde-medio-4: #00B35D;
+    --color-primario-verde-medio-3: #26BD74;
+    --color-primario-verde-medio-2: #46CB8B;
+    --color-primario-verde-claro-1: #71DCA9;
+    --color-segundario-azul-oscuro-5: #02667D;
+    --color-segundario-azul-medio-4: #0288A7;
+    --color-segundario-azul-medio-3: #06AAD1;
+    --color-segundario-azul-medio-2: #2DB5D5;
+    --color-segundario-azul-claro-1: #56C2DB;
+    --color-segundario-limon-oscuro-5: #31A500;
+    --color-segundario-limon-medio-4: #42DC00;
+    --color-segundario-limon-medio-3: #62E02D;
+    --color-segundario-limon-medio-2: #7DE750;
+    --color-segundario-limon-claro-1: #9EEF7B;
+    --color-verde: #62E02D;
+    --color-verde-claro: rgba(99, 224, 45, 0.36);
+    --color-azul: #040404;
+    --color-azul-claro: #2de0dd;
+    --color-azul-medio: #1bc6ec;
+    --color-azul-medio-claro: rgba(27, 198, 236, 0.3);
+    --color-azul-oscuro: #006aff;
+    --color-cenizo-36: #3E2423;
+    --color-cenizo-46: #233E32;
+    --color-cenizo-56: #4a4a4a;
+    --color-cenizo-66: #999999;
+    --color-oscuro-1: #2d1b66;
+
+    /* Fonts */
+    /* Fonts & Typography (Fluid) */
+    --poppins: 'Poppins', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+
+    --fs-h1: clamp(2.2rem, 10vw + 1rem, 3.8rem);
+    --fs-h2: clamp(1.8rem, 6vw + 1rem, 2.8rem);
+    --fs-h3: clamp(1.3rem, 4vw + 1rem, 1.8rem);
+    --fs-body: clamp(0.95rem, 0.5vw + 0.8rem, 1.1rem);
+
+    /* Spacing (Fluid) */
+    --container-padding: clamp(1rem, 5vw, 10rem);
+    --section-padding: clamp(3rem, 10vh, 6rem);
+
+    /* Mixins/Utility tokens */
+    --transition: all 0.3s ease-in-out;
+    --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* Breakpoints */
+@media screen and (min-width: 768px) {
+    :root {
+        --container-padding: 4rem;
+        --section-padding: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --container-padding: 8rem;
+        --section-padding: 6rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    :root {
+        --container-padding: 12rem;
+    }
+}
