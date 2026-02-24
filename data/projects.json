@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Encriptador de texto",
+        "description": "Proyecto hecho con HTML5, CSS3 y Javascript. Encripta cualquier texto reemplazando las vocales por alguna palabra corta. No se permite ingresar mayúsculas, acentos o cualquier caracter especial. También es posible desencriptar textos que ya han sido encriptados. Fue el primer challenge del programa Oracle Next Education con Alura Latam.",
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "Javascript"
+        ],
+        "image": "assets/images/Proyects/encriptador-web.png",
+        "repoUrl": "https://github.com/Julian090104/encriptador-web",
+        "liveUrl": "https://julian090104.github.io/encriptador-web/"
+    },
+    {
+        "title": "Web Barberia",
+        "description": "Proyecto hecho con HTML5, CSS3 y JavaScript. Consiste en una página web básica para una barbería que incluye una navegación con secciones de Home, Productos y Contacto. El proyecto aborda conceptos de estructura de documentos con HTML, estilos y diseño responsive con CSS. Fue un proyecto hecho durante el programa Oracle Next Education con Alura Latam.",
+        "technologies": [
+            "HTML5",
+            "CSS3"
+        ],
+        "image": "assets/images/Proyects/barberia-web.png",
+        "repoUrl": "https://github.com/Julian090104/barberia-alura",
+        "liveUrl": "https://julian090104.github.io/barberia-alura/"
+    }
+]

@@ -1,0 +1,69 @@
+.skill-badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-base);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.skill-badge:hover {
+    background: var(--bg-surface-alt);
+    border-color: var(--clr-primary-light);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.skill-badge__img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    margin-bottom: 1.2rem;
+    transition: var(--transition);
+}
+
+.skill-badge:hover .skill-badge__img {
+    transform: scale(1.1);
+}
+
+.skill-badge__name {
+    font-weight: 700;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Hobby Badge */
+.hobby-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-base);
+    padding: 0.9rem 1.4rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    gap: 0.8rem;
+}
+
+.hobby-badge:hover {
+    background: var(--bg-surface);
+    border-color: var(--clr-accent);
+    transform: scale(1.05);
+}
+
+.hobby-badge__img {
+    height: 1.4rem;
+    opacity: 0.8;
+}
+
+.hobby-badge__name {
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.95rem;
+}

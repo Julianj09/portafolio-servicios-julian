@@ -1,0 +1,36 @@
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+@import 'layout/header.css';
+@import 'layout/footer.css';
+@import 'layout/sections.css';
+@import 'components/buttons.css';
+@import 'components/card.css';
+@import 'components/badge.css';
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    background: var(--bg-body);
+    color: var(--text-main);
+    font-family: var(--poppins);
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Global utilities */
+.container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Base structural layout for sections */
+section.container,
+main .container,
+footer.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}

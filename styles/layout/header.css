@@ -1,0 +1,141 @@
+.menu {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: var(--transition);
+    height: 80px;
+    border-bottom: 1px solid var(--border-base);
+}
+
+.menu.sticky {
+    height: 70px;
+    box-shadow: var(--shadow-md);
+}
+
+.menu__logo {
+    color: var(--clr-primary);
+    font-size: 1.6rem;
+    font-weight: 800;
+    z-index: 1001;
+}
+
+[data-theme="dark"] .menu__logo {
+    color: var(--clr-accent);
+}
+
+.menu__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 1001;
+}
+
+.theme-toggle {
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-base);
+    color: var(--text-main);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    background: var(--clr-primary);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.menu__toggle-label {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-main);
+}
+
+#menu__bar {
+    display: none;
+}
+
+.menu__list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+#menu__bar:checked~nav .menu__list {
+    left: 0;
+}
+
+.menu__link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+
+.menu__link:hover {
+    color: var(--clr-primary);
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .menu__toggle-label {
+        display: none;
+    }
+
+    .menu__list {
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: transparent;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .menu__link {
+        font-size: 1rem;
+        color: var(--text-main);
+    }
+
+    .menu__link:after {
+        content: "";
+        display: block;
+        background-color: var(--clr-accent);
+        height: 2px;
+        width: 0;
+        transition: 0.3s;
+        margin-top: 4px;
+    }
+
+    .menu__link:hover:after {
+        width: 100%;
+    }
+}
