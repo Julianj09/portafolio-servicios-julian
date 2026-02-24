@@ -30,8 +30,15 @@
     <!-- Menú -->
     <header class="menu container">
         <h2 class="menu__logo">Julian T.</h2>
+
+        <div class="menu__actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                <i class="uil uil-moon"></i>
+            </button>
+            <label for="menu__bar" class="menu__toggle-label">&#9776;</label>
+        </div>
+
         <input type="checkbox" id="menu__bar">
-        <label for="menu__bar">&#9776;</label>
         <nav>
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>

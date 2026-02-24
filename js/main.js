@@ -5,9 +5,11 @@ import { renderProjects } from './modules/renderProjects.js';
 import { renderEducation } from './modules/renderEducation.js';
 import { initNavbar, renderFooter } from './modules/navbar.js';
 import { initFormValidation } from './modules/form.js';
+import { initTheme } from './modules/theme.js';
 
 async function init() {
-    // Load all data
+    // 0. Initialize theme immediately
+    initTheme();
     const [profile, skills, projects, education, social] = await Promise.all([
         fetchData('./data/profile.json'),
         fetchData('./data/skills.json'),
