@@ -23,6 +23,7 @@ export function renderEducation(education) {
                     class="feather feather-chevron-up">
                     <polyline points="18 15 12 9 6 15"></polyline>
                 </svg>
+            </div>
         </details>
     `).join('');
 }

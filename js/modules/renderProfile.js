@@ -34,7 +34,7 @@ export function renderAbout(profile) {
 
     aboutContainer.innerHTML = `
         <div class="about__text">
-            <h3 class="about__title">Sobre mí</h3>
+            <h3 class="section-title">Sobre mí</h3>
             <p class="about__description">
                 ${profile.about.replace(/\n/g, '<br>')}
             </p>
