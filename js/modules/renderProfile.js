@@ -41,7 +41,7 @@ export function renderAbout(profile) {
         </div>
         <div class="about__img">
             <figure>
-                <img src="assets/images/about/developer-1.png" alt="Ilustración desarrollador" class="about__img--optional" loading="lazy">
+                <img src="assets/images/about/about-dev.webp" alt="Ilustración desarrollador" class="about__img--optional" loading="lazy">
             </figure>
         </div>
     `;

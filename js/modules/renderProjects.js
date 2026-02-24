@@ -12,7 +12,7 @@ export function renderProjects(projects) {
                     ${project.technologies.map(tech => {
         // Attempt to map tech name to icon path if possible, 
         // but since JSON already should have paths or names, we use a simple logic
-        const iconPath = `assets/images/Skills/${tech.toLowerCase()}.svg`;
+        const iconPath = `assets/images/skills/${tech.toLowerCase()}.svg`;
         return `<img src="${iconPath}" alt="${tech}" title="${tech}">`;
     }).join('')}
                 </div>
