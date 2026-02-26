@@ -4,15 +4,19 @@ export function renderEducation(education) {
 
     educationContainer.innerHTML = education.map(item => {
         const statusClass = item.status.toLowerCase().replace(/\s+/g, '-');
+        const isFinished = item.status.toLowerCase() === 'finalizado';
 
         return `
         <details class="education__card">
             <summary class="education__summary">
                 <div class="education__summary-content">
                     <div class="education__header-top">
-                        <span class="education__status education__status--${statusClass}">
-                            ${item.status}
-                        </span>
+                        <div class="education__badges">
+                            <span class="education__type-badge">${item.type}</span>
+                            <span class="education__status education__status--${statusClass}">
+                                ${item.status}
+                            </span>
+                        </div>
                         <span class="education__period">${item.period}</span>
                     </div>
                     <h4 class="education__title">${item.title}</h4>
@@ -59,14 +63,21 @@ export function renderEducation(education) {
                 </div>
 
                 <div class="education__footer">
-                    <span class="education__location">
+                    <div class="education__location">
                         <i class="uil uil-map-marker"></i> ${item.location}
-                    </span>
-                    ${item.link ? `
-                        <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="education__link">
-                            Ver institución <i class="uil uil-external-link-alt"></i>
-                        </a>
-                    ` : ''}
+                    </div>
+                    <div class="education__actions">
+                        ${item.link ? `
+                            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="education__button education__button--outline">
+                                <i class="uil uil-university"></i> Ver institución
+                            </a>
+                        ` : ''}
+                        ${(isFinished && item.certificateUrl) ? `
+                            <a href="${item.certificateUrl}" target="_blank" rel="noopener noreferrer" class="education__button education__button--primary">
+                                <i class="uil uil-medal"></i> Ver certificado
+                            </a>
+                        ` : ''}
+                    </div>
                 </div>
             </div>
         </details>

@@ -4,6 +4,7 @@
         "institution": "Universidad de Pamplona, Colombia",
         "period": "2021 - Presente",
         "status": "En curso",
+        "type": "Pregrado",
         "description": "Formación integral en el diseño, desarrollo e implementación de sistemas de información, bases de datos y arquitecturas de software escalables.",
         "achievements": [
             "Promedio académico destacado entre los mejores de la cohorte.",
@@ -30,6 +31,7 @@
         "institution": "Programa Oracle Next Education con Alura Latam",
         "period": "2024 - 2025",
         "status": "Finalizado",
+        "type": "Especialización",
         "description": "Programa intensivo de formación técnica enfocado en el desarrollo de aplicaciones web interactivas y escalables utilizando estándares modernos.",
         "achievements": [
             "Certificación en múltiples módulos de desarrollo web.",
@@ -49,13 +51,15 @@
             "React"
         ],
         "location": "Remoto",
-        "link": "https://www.oracle.com/lad/education/oracle-next-education/"
+        "link": "https://www.oracle.com/lad/education/oracle-next-education/",
+        "certificateUrl": "https://app.aluracursos.com/user/julian-j09/fullCertificate/..."
     },
     {
         "title": "Google Ciberseguridad & IA",
         "institution": "Google-Coursera",
         "period": "2024 - Presente",
         "status": "En curso",
+        "type": "Certificación",
         "description": "Especialización en la protección de infraestructuras digitales y la implementación de soluciones de Inteligencia Artificial para la mitigación de riesgos.",
         "achievements": [
             "Análisis preventivo de vulnerabilidades en aplicaciones web.",
