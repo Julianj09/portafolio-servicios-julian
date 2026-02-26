@@ -34,14 +34,14 @@ export function renderAbout(profile) {
 
     aboutContainer.innerHTML = `
         <div class="about__text">
-            <h3 class="about__title">Sobre mí</h3>
+            <h3 class="section-title">Sobre mí</h3>
             <p class="about__description">
                 ${profile.about.replace(/\n/g, '<br>')}
             </p>
         </div>
         <div class="about__img">
             <figure>
-                <img src="assets/images/about/developer-1.png" alt="Ilustración desarrollador" class="about__img--optional" loading="lazy">
+                <img src="assets/images/about/about-dev.webp" alt="Ilustración desarrollador" class="about__img--optional" loading="lazy">
             </figure>
         </div>
     `;

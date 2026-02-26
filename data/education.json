@@ -1,17 +1,84 @@
 [
     {
+        "title": "Ingenieria en Sistemas",
+        "institution": "Universidad de Pamplona, Colombia",
+        "period": "2021 - Presente",
+        "status": "En curso",
+        "type": "Pregrado",
+        "description": "Formación integral en el diseño, desarrollo e implementación de sistemas de información, bases de datos y arquitecturas de software escalables.",
+        "achievements": [
+            "Promedio académico destacado entre los mejores de la cohorte.",
+            "Participación activa en semilleros de investigación sobre algoritmos y optimización.",
+            "Desarrollo de proyectos académicos enfocados en soluciones web y móviles."
+        ],
+        "skills": [
+            "Algoritmos y Estructuras de Datos",
+            "Bases de Datos Relacionales",
+            "Sistemas Operativos",
+            "Arquitectura de Software"
+        ],
+        "technologies": [
+            "Java",
+            "C++",
+            "SQL",
+            "Python"
+        ],
+        "location": "Pamplona, Norte de Santander",
+        "link": "https://www.unipamplona.edu.co/"
+    },
+    {
         "title": "Especialización FrontEnd",
         "institution": "Programa Oracle Next Education con Alura Latam",
-        "period": "2024 - Presente"
+        "period": "2024 - 2025",
+        "status": "Finalizado",
+        "type": "Especialización",
+        "description": "Programa intensivo de formación técnica enfocado en el desarrollo de aplicaciones web interactivas y escalables utilizando estándares modernos.",
+        "achievements": [
+            "Certificación en múltiples módulos de desarrollo web.",
+            "Desarrollo de 5+ proyectos prácticos tipo 'Challenge' validados por expertos.",
+            "Dominio de despliegue continuo y mejores prácticas de UI/UX."
+        ],
+        "skills": [
+            "Responsive Design",
+            "JavaScript ES6+",
+            "Accesibilidad Web",
+            "Git & GitHub"
+        ],
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React"
+        ],
+        "location": "Remoto",
+        "link": "https://www.oracle.com/lad/education/oracle-next-education/",
+        "certificateUrl": "https://app.aluracursos.com/user/julian-j09/fullCertificate/..."
     },
     {
         "title": "Google Ciberseguridad & IA",
         "institution": "Google-Coursera",
-        "period": "2024 - Presente"
-    },
-    {
-        "title": "Ingenieria en Sistemas",
-        "institution": "Universidad de Pamplona, Colombia",
-        "period": "2021 - Presente"
+        "period": "2024 - Presente",
+        "status": "En curso",
+        "type": "Certificación",
+        "description": "Especialización en la protección de infraestructuras digitales y la implementación de soluciones de Inteligencia Artificial para la mitigación de riesgos.",
+        "achievements": [
+            "Análisis preventivo de vulnerabilidades en aplicaciones web.",
+            "Implementación de modelos básicos de IA para detección de intrusiones.",
+            "Uso de herramientas líderes como SQL, Python y Linux para seguridad."
+        ],
+        "skills": [
+            "Ciberseguridad",
+            "Inteligencia Artificial",
+            "Gestión de Riesgos",
+            "Protección de Datos"
+        ],
+        "technologies": [
+            "Python",
+            "Linux",
+            "SQL",
+            "PyTorch"
+        ],
+        "location": "Remoto",
+        "link": "https://www.coursera.org/google-certificates/cybersecurity-certificate"
     }
 ]

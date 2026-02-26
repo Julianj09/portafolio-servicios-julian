@@ -7,7 +7,7 @@
             "CSS3",
             "Javascript"
         ],
-        "image": "assets/images/Proyects/encriptador-web.png",
+        "image": "assets/images/projects/encriptador-web.webp",
         "repoUrl": "https://github.com/Julian090104/encriptador-web",
         "liveUrl": "https://julian090104.github.io/encriptador-web/"
     },
@@ -18,7 +18,7 @@
             "HTML5",
             "CSS3"
         ],
-        "image": "assets/images/Proyects/barberia-web.png",
+        "image": "assets/images/projects/barberia-web.webp",
         "repoUrl": "https://github.com/Julian090104/barberia-alura",
         "liveUrl": "https://julian090104.github.io/barberia-alura/"
     }
