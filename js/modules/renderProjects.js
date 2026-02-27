@@ -18,18 +18,16 @@ export function renderProjects(projects) {
             </div>
             
             <div class="projects__content">
-                <header class="projects__header">
-                    <div class="projects__header-main">
+                <div class="projects__main-info">
+                    <header class="projects__header">
+                        <span class="projects__role-label">${project.role}</span>
                         <h3 class="projects__title">${project.title}</h3>
-                        <span class="projects__role-tag">
-                            <i class="uil uil-user-circle"></i> ${project.role}
-                        </span>
-                    </div>
-                    
+                    </header>
+
                     <p class="projects__tagline">${project.description}</p>
                     
                     <div class="projects__tech">
-                        ${project.technologies.slice(0, 4).map(tech => {
+                        ${project.technologies.map(tech => {
             const iconPath = `assets/images/skills/${tech.toLowerCase()}.svg`;
             return `
                             <span class="projects__tech-badge" title="${tech}">
@@ -37,46 +35,47 @@ export function renderProjects(projects) {
                                 ${tech}
                             </span>`;
         }).join('')}
-                        ${project.technologies.length > 4 ? `<span class="projects__tech-more">+${project.technologies.length - 4}</span>` : ''}
                     </div>
-                </header>
+                </div>
 
-                <details class="projects__accordion">
-                    <summary class="projects__summary">
-                        <span class="projects__summary-text">Ver análisis técnico</span>
-                        <i class="uil uil-angle-down projects__summary-icon"></i>
-                    </summary>
-                    
-                    <div class="projects__expanded-content">
-                        <div class="projects__details-grid">
-                            <div class="projects__detail-item">
-                                <h4 class="projects__detail-title"><i class="uil uil-search"></i> Desafío</h4>
-                                <p class="projects__detail-text">${project.problem}</p>
-                            </div>
-                            
-                            <div class="projects__detail-item">
-                                <h4 class="projects__detail-title"><i class="uil uil-rocket"></i> Solución</h4>
-                                <p class="projects__detail-text">${project.solution}</p>
-                            </div>
-
-                            <div class="projects__technical-lists">
-                                <div class="projects__list-block">
-                                    <h5 class="projects__list-title">Retos Clave</h5>
-                                    <ul class="projects__list">
-                                        ${project.challenges.map(challenge => `<li>${challenge}</li>`).join('')}
-                                    </ul>
+                <div class="projects__interactive-area">
+                    <details class="projects__accordion">
+                        <summary class="projects__summary">
+                            <span>ANÁLISIS TÉCNICO</span>
+                            <i class="uil uil-plus projects__summary-icon"></i>
+                        </summary>
+                        
+                        <div class="projects__expanded-content">
+                            <div class="projects__details-grid">
+                                <div class="projects__detail-item">
+                                    <h4 class="projects__detail-title"><i class="uil uil-search"></i> Desafío</h4>
+                                    <p class="projects__detail-text">${project.problem}</p>
                                 </div>
                                 
-                                <div class="projects__list-block">
-                                    <h5 class="projects__list-title">Resultados</h5>
-                                    <ul class="projects__list">
-                                        ${project.results.map(result => `<li>${result}</li>`).join('')}
-                                    </ul>
+                                <div class="projects__detail-item">
+                                    <h4 class="projects__detail-title"><i class="uil uil-rocket"></i> Solución</h4>
+                                    <p class="projects__detail-text">${project.solution}</p>
+                                </div>
+
+                                <div class="projects__technical-lists">
+                                    <div class="projects__list-block">
+                                        <h5 class="projects__list-title">Retos</h5>
+                                        <ul class="projects__list">
+                                            ${project.challenges.map(challenge => `<li>${challenge}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="projects__list-block">
+                                        <h5 class="projects__list-title">Hitos</h5>
+                                        <ul class="projects__list">
+                                            ${project.results.map(result => `<li>${result}</li>`).join('')}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </details>
+                    </details>
+                </div>
 
                 <div class="projects__actions">
                     <a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--outline projects__link">
