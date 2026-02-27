@@ -47,7 +47,7 @@ async function init() {
         sr.reveal('.skills__tech', { delay: 100, origin: 'bottom' });
         sr.reveal('.skills__hobbies', { delay: 50, origin: 'bottom' });
         sr.reveal('details', { delay: 50, origin: 'bottom', interval: 100 });
-        sr.reveal('.card', { delay: 200, origin: 'left', interval: 200 });
+        sr.reveal('.projects__card', { delay: 200, origin: 'left', interval: 200 });
     }
 }
 
