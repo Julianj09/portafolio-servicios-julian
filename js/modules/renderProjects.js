@@ -8,7 +8,9 @@ export function renderProjects(projects) {
         return `
         <article class="projects__card">
             <div class="projects__img-container">
-                <img src="${project.image}" alt="Vista previa del proyecto ${project.title}" class="projects__img" loading="lazy">
+                <div class="projects__img-wrapper">
+                    <img src="${project.image}" alt="Vista previa del proyecto ${project.title}" class="projects__img" loading="lazy">
+                </div>
                 <div class="projects__img-overlay">
                     <div class="projects__badges">
                         <span class="projects__badge projects__badge--type">${project.type}</span>
