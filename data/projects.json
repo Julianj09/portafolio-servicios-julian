@@ -1,11 +1,24 @@
 [
     {
         "title": "Encriptador de texto",
-        "description": "Proyecto hecho con HTML5, CSS3 y Javascript. Encripta cualquier texto reemplazando las vocales por alguna palabra corta. No se permite ingresar mayúsculas, acentos o cualquier caracter especial. También es posible desencriptar textos que ya han sido encriptados. Fue el primer challenge del programa Oracle Next Education con Alura Latam.",
+        "type": "Challenge Alura",
+        "status": "Finalizado",
+        "description": "SPA de cifrado de mensajes mediante algoritmos de sustitución.",
+        "problem": "Necesidad de intercambiar mensajes de forma privada y segura.",
+        "solution": "Desarrollo de un sistema de cifrado César-ish con lógica de reversión garantizada.",
+        "role": "Full Stack Jr.",
         "technologies": [
             "HTML5",
             "CSS3",
             "Javascript"
+        ],
+        "challenges": [
+            "Lógica de validación RegEx estricta.",
+            "Gestión eficiente del DOM nativo."
+        ],
+        "results": [
+            "Interfaz 100% responsive.",
+            "Copiado al portapapeles integrado."
         ],
         "image": "assets/images/projects/encriptador-web.webp",
         "repoUrl": "https://github.com/Julian090104/encriptador-web",
@@ -13,10 +26,24 @@
     },
     {
         "title": "Web Barberia",
-        "description": "Proyecto hecho con HTML5, CSS3 y JavaScript. Consiste en una página web básica para una barbería que incluye una navegación con secciones de Home, Productos y Contacto. El proyecto aborda conceptos de estructura de documentos con HTML, estilos y diseño responsive con CSS. Fue un proyecto hecho durante el programa Oracle Next Education con Alura Latam.",
+        "type": "Académico",
+        "status": "Producción",
+        "description": "Plataforma comercial para la gestión de servicios y productos de barbería.",
+        "problem": "Ausencia de presencia digital y baja visibilidad del negocio.",
+        "solution": "Sitio web multi-sección optimizado para SEO con diseño visual atractivo.",
+        "role": "Frontend Developer",
         "technologies": [
             "HTML5",
-            "CSS3"
+            "CSS3",
+            "JavaScript"
+        ],
+        "challenges": [
+            "Arquitectura CSS modular y escalable.",
+            "Optimización de activos (WebP) para carga rápida."
+        ],
+        "results": [
+            "Publicación exitosa en GitHub Pages.",
+            "Estructura escalable para sistema de reservas."
         ],
         "image": "assets/images/projects/barberia-web.webp",
         "repoUrl": "https://github.com/Julian090104/barberia-alura",
