@@ -31,11 +31,13 @@
     position: relative;
     width: 100%;
     padding: 1.5rem;
-    /* Inset padding to avoid 100% width look */
+    /* Uniform padding for perfect centering */
     background: var(--bg-surface-alt);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    /* Vertical centering */
+    gap: 0.8rem;
     flex-shrink: 0;
 }
 
@@ -83,17 +85,16 @@
 
 /* Badges positioned more elegantly */
 .projects__img-overlay {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+    width: 100%;
     z-index: 10;
 }
 
 .projects__badges {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.4rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* Align to the right like a status bar */
+    gap: 0.5rem;
 }
 
 .projects__badge {
@@ -113,8 +114,18 @@
 }
 
 .projects__badge--status {
-    background: rgba(var(--bg-surface-alt), 0.8);
+    background: var(--bg-surface);
     color: var(--text-main);
+}
+
+.projects__badge--finalizado {
+    color: var(--clr-primary-light);
+    border-color: rgba(var(--clr-primary-light-rgb), 0.2);
+}
+
+.projects__badge--produccion {
+    color: var(--clr-accent);
+    border-color: rgba(var(--clr-accent-rgb), 0.2);
 }
 
 /* --- Content Area Layout --- */
@@ -266,9 +277,8 @@
 
     .projects__img-container {
         width: 42%;
-        /* Slightly adjusted for better balance */
-        padding: 2rem;
-        /* More air on desktop */
+        padding: 2.5rem;
+        /* More air on desktop to enhance the centered look */
     }
 
     .projects__content {

@@ -8,14 +8,14 @@ export function renderProjects(projects) {
         return `
         <article class="projects__card">
             <div class="projects__img-container">
-                <div class="projects__img-wrapper">
-                    <img src="${project.image}" alt="Vista previa del proyecto ${project.title}" class="projects__img" loading="lazy">
-                </div>
                 <div class="projects__img-overlay">
                     <div class="projects__badges">
                         <span class="projects__badge projects__badge--type">${project.type}</span>
                         <span class="projects__badge projects__badge--status projects__badge--${statusClass}">${project.status}</span>
                     </div>
+                </div>
+                <div class="projects__img-wrapper">
+                    <img src="${project.image}" alt="Vista previa del proyecto ${project.title}" class="projects__img" loading="lazy">
                 </div>
             </div>
             
