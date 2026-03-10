@@ -1,52 +1,484 @@
 [
-    {
-        "title": "Encriptador de texto",
-        "type": "Challenge Alura",
-        "status": "Finalizado",
-        "description": "SPA de cifrado de mensajes mediante algoritmos de sustitución.",
-        "problem": "Necesidad de intercambiar mensajes de forma privada y segura.",
-        "solution": "Desarrollo de un sistema de cifrado César-ish con lógica de reversión garantizada.",
-        "role": "Full Stack Jr.",
-        "technologies": [
-            "HTML5",
-            "CSS3",
-            "Javascript"
-        ],
-        "challenges": [
-            "Lógica de validación RegEx estricta.",
-            "Gestión eficiente del DOM nativo."
-        ],
-        "results": [
-            "Interfaz 100% responsive.",
-            "Copiado al portapapeles integrado."
-        ],
-        "image": "assets/images/projects/encriptador-web.webp",
-        "repoUrl": "https://github.com/Julian090104/encriptador-web",
-        "liveUrl": "https://julian090104.github.io/encriptador-web/"
+  {
+    "id": 1,
+    "title": "Encriptador de texto",
+    "type": "Challenge Alura",
+    "status": "Finalizado",
+    "featured": true,
+    "date": {
+      "start": "2024-01",
+      "end": "2024-02"
     },
-    {
-        "title": "Web Barberia",
-        "type": "Académico",
-        "status": "Producción",
-        "description": "Plataforma comercial para la gestión de servicios y productos de barbería.",
-        "problem": "Ausencia de presencia digital y baja visibilidad del negocio.",
-        "solution": "Sitio web multi-sección optimizado para SEO con diseño visual atractivo.",
-        "role": "Frontend Developer",
-        "technologies": [
-            "HTML5",
-            "CSS3",
-            "JavaScript"
-        ],
-        "challenges": [
-            "Arquitectura CSS modular y escalable.",
-            "Optimización de activos (WebP) para carga rápida."
-        ],
-        "results": [
-            "Publicación exitosa en GitHub Pages.",
-            "Estructura escalable para sistema de reservas."
-        ],
-        "image": "assets/images/projects/barberia-web.webp",
-        "repoUrl": "https://github.com/Julian090104/barberia-alura",
-        "liveUrl": "https://julian090104.github.io/barberia-alura/"
-    }
+    "description": "SPA de cifrado de mensajes mediante algoritmos de sustitución. Aplicación web interactiva que permite encriptar y desencriptar mensajes de forma segura.",
+    "problem": "Necesidad de intercambiar mensajes de forma privada y segura. Falta de herramientas simples para codificar información sensible.",
+    "solution": "Desarrollo de un sistema de cifrado César-ish con lógica de reversión garantizada. Interfaz intuitiva para cifrado/desciframiento con validación de caracteres.",
+    "role": "Full Stack Jr.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "challenges": [
+      "Lógica de validación RegEx estricta",
+      "Gestión eficiente del DOM nativo",
+      "Validación de entrada sin librerías",
+      "Copia al portapapeles sin dependencias externas"
+    ],
+    "results": [
+      "Interfaz 100% responsive",
+      "Copiado al portapapeles integrado",
+      "Validación de caracteres según especificaciones",
+      "Algoritmo de reversión garantizada"
+    ],
+    "learnings": [
+      "Expresiones regulares avanzadas",
+      "Manipulación segura del DOM",
+      "Validación de formularios sin librerías",
+      "API del portapapeles nativa"
+    ],
+    "metrics": {
+      "responsive": true,
+      "features": 2,
+      "complexity": "Baja"
+    },
+    "image": "assets/images/projects/encriptador-web.webp",
+    "repoUrl": "https://github.com/Julianj09/encriptador-web",
+    "liveUrl": "https://julianj09.github.io/encriptador-web/"
+  },
+  {
+    "id": 2,
+    "title": "Web Barbería",
+    "type": "Académico",
+    "status": "Producción",
+    "featured": true,
+    "date": {
+      "start": "2024-03",
+      "end": "2024-04"
+    },
+    "description": "Plataforma comercial para la gestión de servicios y productos de barbería. Sitio web multi-sección optimizado para SEO con diseño visual atractivo y estructura escalable.",
+    "problem": "Ausencia de presencia digital y baja visibilidad del negocio en línea. Necesidad de mostrar servicios y atraer clientes.",
+    "solution": "Sitio web multi-sección optimizado para SEO con diseño visual atractivo. Estructura HTML/CSS escalable preparada para futuras integraciones.",
+    "role": "Frontend Developer",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "challenges": [
+      "Arquitectura CSS modular y escalable",
+      "Optimización de activos (WebP) para carga rápida",
+      "Diseño responsive sin frameworks",
+      "Estructura preparada para sistema de reservas futuro"
+    ],
+    "results": [
+      "Publicación exitosa en GitHub Pages",
+      "Estructura escalable para sistema de reservas",
+      "Carga optimizada de imágenes",
+      "Diseño completamente responsive"
+    ],
+    "learnings": [
+      "Diseño responsive y mobile-first",
+      "Optimización de imágenes y assets",
+      "Estructura CSS escalable (BEM/SMACSS)",
+      "Publicación en GitHub Pages"
+    ],
+    "metrics": {
+      "responsive": true,
+      "pages": 4,
+      "complexity": "Media",
+      "seo": "Optimizado"
+    },
+    "image": "assets/images/projects/barberia-web.webp",
+    "repoUrl": "https://github.com/Julianj09/barberia-alura",
+    "liveUrl": "https://julianj09.github.io/barberia-alura/"
+  },
+  {
+    "id": 3,
+    "title": "Conversor de Monedas",
+    "type": "Challenge Oracle ONE",
+    "status": "Finalizado",
+    "featured": true,
+    "date": {
+      "start": "2024-05",
+      "end": "2024-06"
+    },
+    "description": "Aplicación de escritorio con interfaz gráfica para la conversión de monedas en tiempo real. Utiliza APIs externas para obtener tasas de cambio actualizadas y mantiene historial de conversiones.",
+    "problem": "Necesidad de una herramienta rápida y confiable para convertir divisas con tasas actualizadas. Falta de aplicaciones simples y eficientes para este propósito.",
+    "solution": "Aplicación Java con interfaz gráfica (Swing/AWT) que consulta APIs de tasas de cambio en tiempo real. Implementa análisis de JSON y almacenamiento de historial.",
+    "role": "Backend Developer Jr.",
+    "technologies": [
+      "Java",
+      "Maven"
+    ],
+    "challenges": [
+      "Integración con APIs externas",
+      "Parsing y análisis de respuestas JSON",
+      "Desarrollo de interfaz gráfica en Java",
+      "Manejo de tasas de cambio dinámicas",
+      "Persistencia de historial de conversiones"
+    ],
+    "results": [
+      "Conversión en tiempo real con tasas actualizadas",
+      "Interfaz gráfica intuitiva y funcional",
+      "Historial de conversiones con timestamps",
+      "Manejo robusto de errores de conexión"
+    ],
+    "learnings": [
+      "Consumo de APIs REST en Java",
+      "Análisis de JSON con librerías nativas",
+      "Desarrollo de interfaces gráficas en Java",
+      "Gestión de requests HTTP",
+      "Programación asíncrona básica"
+    ],
+    "metrics": {
+      "responsive": false,
+      "features": 5,
+      "complexity": "Media-Alta",
+      "hasAPI": true
+    },
+    "image": "assets/images/projects/conversor-monedas.png",
+    "repoUrl": "https://github.com/Julianj09/alura-cursos-oracle-conversor-monedas",
+    "liveUrl": ""
+  },
+  {
+    "id": 4,
+    "title": "ForoHub API",
+    "type": "Challenge Oracle ONE",
+    "status": "Finalizado",
+    "featured": true,
+    "date": {
+      "start": "2024-07",
+      "end": "2024-08"
+    },
+    "description": "API RESTful de un foro en línea desarrollada con Spring Boot y MySQL. Implementa autenticación JWT, CRUD completo de tópicos, usuarios y respuestas, con seguridad de nivel empresarial.",
+    "problem": "Necesidad de crear una plataforma de foro con backend robusto. Requerimientos de autenticación segura, gestión de usuarios y tópicos, y escalabilidad.",
+    "solution": "API REST con Spring Boot, Spring Security, JWT y JPA. Arquitectura de capas con servicios, controladores y repositorios. Base de datos relacional con MySQL.",
+    "role": "Backend Developer",
+    "technologies": [
+      "Java",
+      "Maven"
+    ],
+    "challenges": [
+      "Implementación de autenticación JWT",
+      "Diseño de base de datos relacional",
+      "CRUD de múltiples entidades relacionadas",
+      "Validación de datos en múltiples niveles",
+      "Manejo de excepciones y errores",
+      "Implementación de paginación y filtros",
+      "Documentación de API con Swagger"
+    ],
+    "results": [
+      "API completamente funcional con CRUD",
+      "Autenticación y autorización segura",
+      "Estructura de capas bien definida",
+      "Validación exhaustiva de datos",
+      "Documentación automática con Swagger",
+      "Manejo robusto de errores"
+    ],
+    "learnings": [
+      "Spring Boot y arquitectura de aplicaciones",
+      "Autenticación JWT y seguridad",
+      "Diseño de APIs RESTful",
+      "Relaciones en JPA/Hibernate",
+      "Validación de datos en backend",
+      "Documentación automática de APIs",
+      "Mejores prácticas de seguridad"
+    ],
+    "metrics": {
+      "responsive": false,
+      "endpoints": 15,
+      "complexity": "Alta",
+      "hasAuthentication": true,
+      "hasDatabase": true
+    },
+    "image": "assets/images/projects/forohub-api.png",
+    "repoUrl": "https://github.com/Julianj09/alura-cursos-oracle-foro-hub",
+    "liveUrl": ""
+  },
+  {
+    "id": 5,
+    "title": "Chat CNT UI v1",
+    "type": "Proyecto Personal",
+    "status": "En Desarrollo",
+    "featured": true,
+    "date": {
+      "start": "2024-09",
+      "end": "2024-12"
+    },
+    "description": "Interfaz web moderna y responsive desarrollada con Vue.js 3 para consultar información sobre el Código Nacional de Tránsito Colombiano. Proporciona una experiencia de chat interactivo para dudas sobre normativas de tránsito.",
+    "problem": "Necesidad de una herramienta interactiva para consultar normas de tránsito colombianas de forma rápida y accesible. Complejidad en la búsqueda de información en documentos largos.",
+    "solution": "Interfaz de chat moderna con Vue.js que permite hacer preguntas sobre el Código de Tránsito. Ejemplos prácticos, descripción de capacidades y limitaciones claramente especificadas.",
+    "role": "Frontend Developer",
+    "technologies": [
+      "JavaScript",
+      "CSS3",
+      "Vite"
+    ],
+    "challenges": [
+      "Implementación de Composition API en Vue.js 3",
+      "Gestión de estado en aplicación de chat",
+      "Diseño responsive con CSS moderno",
+      "Estructura modular de componentes",
+      "Navegación con Vue Router"
+    ],
+    "results": [
+      "Interfaz intuitiva y moderna",
+      "Chat interactivo completamente funcional",
+      "Diseño responsive en múltiples dispositivos",
+      "Arquitectura de componentes escalable",
+      "Documentación clara de funcionalidades y limitaciones"
+    ],
+    "learnings": [
+      "Vue.js 3 y Composition API",
+      "Vue Router para navegación",
+      "Gestión de estado con composables",
+      "Diseño responsive moderno",
+      "Mejores prácticas en componentes Vue",
+      "Estructura de proyectos Vue escalables"
+    ],
+    "metrics": {
+      "responsive": true,
+      "components": 8,
+      "pages": 3,
+      "complexity": "Media"
+    },
+    "image": "assets/images/projects/chat-cnt.png",
+    "repoUrl": "https://github.com/Julianj09/chat-cnt-ui-v1",
+    "liveUrl": ""
+  },
+  {
+    "id": 6,
+    "title": "Portafolio Servicios Julian",
+    "type": "Proyecto Personal",
+    "status": "En Desarrollo",
+    "featured": true,
+    "date": {
+      "start": "2024-10",
+      "end": "En curso"
+    },
+    "description": "Sitio web de portafolio profesional que muestra servicios, habilidades y proyectos de desarrollo. Plataforma para exhibir experiencia y facilitar contacto con clientes potenciales.",
+    "problem": "Necesidad de una presencia digital profesional para mostrar servicios y atraer clientes. Falta de plataforma centralizada para exhibir competencias y proyectos.",
+    "solution": "Sitio de portafolio con secciones de servicios, proyectos, habilidades y contacto. Diseño moderno y responsive que facilita la presentación profesional.",
+    "role": "Full Stack Developer",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "challenges": [
+      "Diseño visual atractivo y profesional",
+      "Optimización para SEO",
+      "Responsive design",
+      "Integración de formulario de contacto",
+      "Carga rápida de assets"
+    ],
+    "results": [
+      "Portafolio profesional completamente funcional",
+      "Presentación clara de servicios",
+      "Galería de proyectos",
+      "Formulario de contacto integrado",
+      "Optimización para buscadores"
+    ],
+    "learnings": [
+      "Diseño de portafolios efectivos",
+      "Branding personal",
+      "Optimización SEO",
+      "Diseño responsive",
+      "Experiencia de usuario (UX)"
+    ],
+    "metrics": {
+      "responsive": true,
+      "sections": 5,
+      "complexity": "Media",
+      "seo": "Optimizado"
+    },
+    "image": "assets/images/projects/portafolio.png",
+    "repoUrl": "https://github.com/Julianj09/portafolio-servicios-julian",
+    "liveUrl": "https://julianj09.github.io/portafolio-servicios-julian/"
+  },
+  {
+    "id": 7,
+    "title": "PedidosAPI",
+    "type": "Proyecto Personal/API",
+    "status": "En Desarrollo",
+    "featured": false,
+    "date": {
+      "start": "2024-11",
+      "end": "En curso"
+    },
+    "description": "API RESTful para gestión de pedidos. Sistema backend para administrar órdenes, clientes y productos con funcionalidades CRUD completas.",
+    "problem": "Necesidad de un sistema robusto para gestionar pedidos en aplicaciones de comercio electrónico. Falta de API flexible y escalable.",
+    "solution": "API REST desarrollada con tecnologías modernas que proporciona endpoints para gestión completa de pedidos, clientes y productos.",
+    "role": "Backend Developer",
+    "technologies": [
+      "Java"
+    ],
+    "challenges": [
+      "Diseño de arquitectura escalable",
+      "Implementación de relaciones entre entidades",
+      "Validación robusta de datos",
+      "Manejo de errores y excepciones",
+      "Documentación de API"
+    ],
+    "results": [
+      "API funcional para gestión de pedidos",
+      "CRUD completo implementado",
+      "Validación de datos",
+      "Estructura de capas organizada"
+    ],
+    "learnings": [
+      "Diseño de APIs escalables",
+      "Arquitectura RESTful",
+      "Gestión de relaciones en bases de datos",
+      "Validación en backend"
+    ],
+    "metrics": {
+      "responsive": false,
+      "endpoints": null,
+      "complexity": "Media",
+      "hasDatabase": true
+    },
+    "image": "assets/images/projects/pedidos-api.png",
+    "repoUrl": "https://github.com/Julianj09/PedidosAPI",
+    "liveUrl": ""
+  },
+  {
+    "id": 8,
+    "title": "Perfil GitHub",
+    "type": "Configuración",
+    "status": "Activo",
+    "featured": false,
+    "date": {
+      "start": "2024-01",
+      "end": "En curso"
+    },
+    "description": "Repositorio especial de perfil de GitHub con README dinámico que muestra habilidades, proyectos y estadísticas de programación.",
+    "problem": "Necesidad de una presentación profesional en el perfil de GitHub que destaque habilidades y proyectos.",
+    "solution": "README personalizado con secciones de skills, proyectos, estadísticas y enlaces a redes profesionales.",
+    "role": "Developer",
+    "technologies": [
+      "Git"
+    ],
+    "challenges": [
+      "Diseño visual en Markdown",
+      "Actualización de estadísticas",
+      "Presentation profesional"
+    ],
+    "results": [
+      "Perfil profesional y atractivo",
+      "Información clara y accesible",
+      "Estadísticas actualizadas"
+    ],
+    "learnings": [
+      "Markdown avanzado",
+      "GitHub Actions",
+      "Personal branding"
+    ],
+    "metrics": {
+      "responsive": true,
+      "complexity": "Baja"
+    },
+    "image": "assets/images/projects/github-profile.png",
+    "repoUrl": "https://github.com/Julianj09/Julianj09",
+    "liveUrl": ""
+  },
+  {
+    "id": 9,
+    "title": "Cupido Frontend",
+    "type": "Proyecto Principal",
+    "status": "En Desarrollo",
+    "featured": true,
+    "date": {
+      "start": "2025-10",
+      "end": "En curso"
+    },
+    "description": "Frontend de la aplicación CupidoUP desarrollado con React y Vite. Interfaz moderna y responsive para la plataforma de conexiones universitarias.",
+    "problem": "Necesidad de una interfaz web moderna, rápida y responsive para la plataforma de conexiones CupidoUP.",
+    "solution": "Aplicación React con Vite que proporciona una experiencia de usuario fluida y optimizada. Arquitectura de componentes escalable con TypeScript.",
+    "role": "Product Owner, Business Analyst & Full Stack Developer",
+    "technologies": [
+      "Javascript",
+      "Vite"
+    ],
+    "challenges": [
+      "Desarrollo de componentes reutilizables",
+      "Optimización de rendimiento con Vite",
+      "Gestión de estado",
+      "Integración con backend API",
+      "Diseño responsive"
+    ],
+    "results": [
+      "Aplicación completamente funcional llevada a producción",
+      "Interfaz moderna y responsiva",
+      "Componentes escalables",
+      "Rendimiento optimizado"
+    ],
+    "learnings": [
+      "React con TypeScript",
+      "Vite y bundling moderno",
+      "Arquitectura de componentes",
+      "Integración con APIs REST"
+    ],
+    "metrics": {
+      "responsive": true,
+      "language": "TypeScript",
+      "stargazers": 5,
+      "forks": 18,
+      "complexity": "Alta"
+    },
+    "image": "assets/images/projects/cupido-frontend.png",
+    "repoUrl": "https://github.com/cupidoUP-App/cupido-frontend",
+    "liveUrl": ""
+  },
+  {
+    "id": 10,
+    "title": "Cupido Backend",
+    "type": "Proyecto Principal",
+    "status": "En Desarrollo",
+    "featured": true,
+    "date": {
+      "start": "2025-10",
+      "end": "En curso"
+    },
+    "description": "Backend API de CupidoUP desarrollado con Django y Django REST Framework. Sistema robusto para gestionar la lógica de negocio de la plataforma de conexiones universitarias.",
+    "problem": "Necesidad de un API backend robusto, escalable y seguro para soportar la plataforma de conexiones CupidoUP.",
+    "solution": "API REST con Django y DRF que proporciona endpoints seguros y bien documentados. Arquitectura de capas con servicios, vistas y modelos bien organizados.",
+    "role": "Product Owner, Business Analyst & Full Stack Developer",
+    "technologies": [
+      "Python"
+    ],
+    "challenges": [
+      "Diseño de base de datos relacional",
+      "CRUD de múltiples entidades",
+      "Validación robusta de datos",
+      "Autenticación y autorización",
+      "Documentación de API",
+      "Escalabilidad"
+    ],
+    "results": [
+      "API completamente funcional llevada a producción",
+      "Endpoints REST bien definidos",
+      "Validación de datos implementada",
+      "Estructura de capas organizada"
+    ],
+    "learnings": [
+      "Django y Django REST Framework",
+      "Diseño de APIs RESTful",
+      "Autenticación en backend",
+      "Gestión de relaciones en BD",
+      "Validación en servidor"
+    ],
+    "metrics": {
+      "responsive": false,
+      "language": "Python",
+      "stargazers": 4,
+      "forks": 14,
+      "complexity": "Alta",
+      "hasDatabase": true,
+      "hasAuthentication": true
+    },
+    "image": "assets/images/projects/cupido-backend.png",
+    "repoUrl": "https://github.com/cupidoUP-App/cupido-backend",
+    "liveUrl": ""
+  }
 ]
