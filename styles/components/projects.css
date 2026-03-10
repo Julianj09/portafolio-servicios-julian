@@ -1,0 +1,294 @@
+/* Projects Section Component Styles */
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+/* Base Card Style */
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-base);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition);
+    height: auto;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+}
+
+.projects__card:hover {
+    border-color: var(--clr-primary-light);
+    box-shadow: var(--shadow-lg);
+}
+
+/* --- Image Section REFACTORED (Mockup Style) --- */
+.projects__img-container {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    /* Uniform padding for perfect centering */
+    background: var(--bg-surface-alt);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertical centering */
+    gap: 0.8rem;
+    flex-shrink: 0;
+}
+
+.projects__img-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/10;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-base);
+    background: var(--bg-surface);
+}
+
+.projects__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__card:hover .projects__img {
+    transform: scale(1.08);
+}
+
+/* Browser-like dots for mockup feel */
+.projects__img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.8rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: rgba(var(--clr-primary-rgb), 0.3);
+    border-radius: 50%;
+    box-shadow: 0.8rem 0 0 rgba(var(--clr-primary-rgb), 0.2), 1.6rem 0 0 rgba(var(--clr-primary-rgb), 0.1);
+    z-index: 5;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.projects__card:hover .projects__img-wrapper::before {
+    opacity: 1;
+}
+
+/* Badges positioned more elegantly */
+.projects__img-overlay {
+    width: 100%;
+    z-index: 10;
+}
+
+.projects__badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* Align to the right like a status bar */
+    gap: 0.5rem;
+}
+
+.projects__badge {
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects__badge--type {
+    background: var(--clr-primary);
+    color: white;
+}
+
+.projects__badge--status {
+    background: var(--bg-surface);
+    color: var(--text-main);
+}
+
+.projects__badge--finalizado {
+    color: var(--clr-primary-light);
+    border-color: rgba(var(--clr-primary-light-rgb), 0.2);
+}
+
+.projects__badge--produccion {
+    color: var(--clr-accent);
+    border-color: rgba(var(--clr-accent-rgb), 0.2);
+}
+
+/* --- Content Area Layout --- */
+.projects__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background: var(--bg-card);
+    flex-grow: 1;
+}
+
+.projects__main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.projects__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.projects__role-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--clr-primary);
+    letter-spacing: 0.1em;
+}
+
+.projects__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text-main);
+}
+
+.projects__tagline {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+.projects__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.projects__tech-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.6rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-base);
+    border-radius: var(--radius-sm);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.projects__tech-badge img {
+    height: 0.9rem;
+    width: 0.9rem;
+}
+
+/* Accordion */
+.projects__accordion {
+    background: var(--bg-surface-alt);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-base);
+}
+
+.projects__summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--clr-primary);
+}
+
+.projects__summary::-webkit-details-marker {
+    display: none;
+}
+
+.projects__expanded-content {
+    padding: 0 1rem 1.2rem 1rem;
+}
+
+.projects__details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-base);
+}
+
+.projects__detail-title {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.projects__detail-text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+.projects__technical-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-column: 1 / -1;
+}
+
+.projects__list li {
+    font-size: 0.75rem;
+}
+
+/* Actions */
+.projects__actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.projects__link {
+    flex: 1;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* --- Responsive Adjustments --- */
+@media screen and (min-width: 1024px) {
+    .projects__card {
+        flex-direction: row;
+        min-height: 400px;
+    }
+
+    .projects__img-container {
+        width: 42%;
+        padding: 2.5rem;
+        /* More air on desktop to enhance the centered look */
+    }
+
+    .projects__content {
+        width: 58%;
+        padding: 3rem;
+    }
+}
+
+/* Dark Mode */
+[data-theme="dark"] .projects__img-wrapper {
+    background: #0f172a;
+    border-color: rgba(255, 255, 255, 0.05);
+}
