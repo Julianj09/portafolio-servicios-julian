@@ -95,42 +95,6 @@
                 <!-- Contenido dinámico -->
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section class="contact container" id="contact">
-            <div class="contact__container">
-                <h3 class="section-title">¿Tienes una idea? Contáctame</h3>
-                <form id="form">
-                    <div class="field">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="Nombre" id="nombre" required placeholder="Tu nombre">
-                        <div class="contact__error contact__error--nombre"></div>
-                        <div id="nombre-counter" class="counter"></div>
-                    </div>
-                    <div class="field">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" name="Asunto" id="asunto" required placeholder="Asunto del correo">
-                        <div class="contact__error contact__error--asunto"></div>
-                        <div id="asunto-counter" class="counter"></div>
-                    </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required placeholder="email@dominio.com">
-                        <div class="contact__error contact__error--email"></div>
-                    </div>
-                    <div class="field">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="Mensaje" id="mensaje" required placeholder="Escribe tu mensaje"></textarea>
-                        <div class="contact__error contact__error--mensaje"></div>
-                        <div id="mensaje-counter" class="counter"></div>
-                    </div>
-                    <button type="submit" id="button" class="btn btn--primary">Enviar Mensaje</button>
-                </form>
-            </div>
-            <figure class="contact__img">
-                <img src="assets/images/about/contact-dev.webp" alt="Ilustración contacto" loading="lazy">
-            </figure>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -140,15 +104,6 @@
             <!-- Contenido dinámico -->
         </div>
     </footer>
-
-    <!-- Scripts Externos -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- EmailJS Config -->
-    <script type="text/javascript">
-        emailjs.init('IlK98jQ2eFKY1Ncg3')
-    </script>
 
     <!-- Entry Point -->
     <script type="module" src="js/main.js"></script>
