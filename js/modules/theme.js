@@ -11,8 +11,7 @@ export function initTheme() {
 
     // 1. Get initial theme
     const savedTheme = localStorage.getItem(THEME_KEY);
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    const currentTheme = savedTheme || systemTheme;
+    const currentTheme = savedTheme || 'dark';
 
     // 2. Set initial state
     applyTheme(currentTheme);

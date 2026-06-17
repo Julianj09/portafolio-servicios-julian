@@ -1,6 +1,5 @@
 body {
     font-family: var(--poppins);
-    background: linear-gradient(#c3daf2 0%, #f9ffff 33.33%, #f9ffff 66.67%, #c3daf2 100%);
     scroll-behavior: smooth;
 }
 

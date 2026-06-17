@@ -1,30 +1,39 @@
+function splitTextToSpans(text) {
+    return text.split(' ').map(word => `<span class="hero__title-word">${word}</span>`).join(' ');
+}
+
 export function renderHero(profile, social) {
     const heroSection = document.querySelector('.hero');
     if (!heroSection) return;
 
+    const nameWords = splitTextToSpans(profile.name);
+
     heroSection.innerHTML = `
-        <div class="hero__container">
-            <h1 class="hero__title">Hola, soy ${profile.name}.</h1>
-            <p class="hero__description">${profile.description}</p>
-            <ul class="hero__social">
+        <div class="hero__container" data-gsap="hero-content">
+            <h1 class="hero__title" data-gsap="hero-title">
+                <span class="hero__title-line">Hola, soy</span>
+                <span class="hero__title-line hero__title-line--name" data-gsap="hero-name">${nameWords}</span>
+            </h1>
+            <span class="hero__role">${profile.role}</span>
+            <p class="hero__description" data-gsap="hero-desc">${profile.description}</p>
+            <ul class="hero__social" data-gsap="hero-cta">
                 <li class="hero__item">
-                    <a href="${profile.cvPath}" target="_blank" class="btn btn--primary">
+                    <a href="${profile.cvPath}" target="_blank" class="btn btn--primary" data-gsap="magnetic">
                         Curriculum <i class="uil uil-external-link-alt"></i>
                     </a>
                 </li>
                 <li class="hero__item">
-                    <a href="${social.linkedin}" target="_blank" class="btn btn--secondary">
+                    <a href="${social.linkedin}" target="_blank" class="btn btn--secondary" data-gsap="magnetic">
                         LinkedIn <i class="uil uil-linkedin"></i>
                     </a>
                 </li>
                 <li class="hero__item">
-                    <a href="${social.github}" target="_blank" class="btn btn--secondary">
+                    <a href="${social.github}" target="_blank" class="btn btn--secondary" data-gsap="magnetic">
                         Github <i class="uil uil-github"></i>
                     </a>
                 </li>
             </ul>
         </div>
-        <img src="${profile.profileImage}" alt="Foto de perfil de ${profile.name}" class="hero__profile" fetchpriority="high">
     `;
 }
 
@@ -33,16 +42,14 @@ export function renderAbout(profile) {
     if (!aboutContainer) return;
 
     aboutContainer.innerHTML = `
-        <div class="about__text">
-            <h3 class="section-title">Sobre mí</h3>
-            <p class="about__description">
+        <h3 class="section-title" data-gsap="about-title">Sobre mí</h3>
+        <div class="about__content">
+            <p class="about__description" data-gsap="about-desc">
                 ${profile.about.replace(/\n/g, '<br>')}
             </p>
-        </div>
-        <div class="about__img">
-            <figure>
-                <img src="assets/images/about/about-dev.webp" alt="Ilustración desarrollador" class="about__img--optional" loading="lazy">
-            </figure>
+            <div class="about__image" data-gsap="about-img">
+                <img src="${profile.profileImage}" alt="Foto de perfil de ${profile.name}" class="about__img" loading="lazy">
+            </div>
         </div>
     `;
 }

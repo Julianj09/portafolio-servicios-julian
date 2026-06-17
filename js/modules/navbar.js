@@ -1,15 +1,4 @@
 export function initNavbar() {
-    const header = document.querySelector('.menu');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('sticky');
-        } else {
-            header.classList.remove('sticky');
-        }
-    });
-
-    // Close mobile menu when a link is clicked
     const menuLinks = document.querySelectorAll('.menu__link');
     const menuCheckbox = document.getElementById('menu__bar');
 
@@ -18,6 +7,37 @@ export function initNavbar() {
             if (menuCheckbox) menuCheckbox.checked = false;
         });
     });
+
+    if (typeof gsap !== 'undefined' && menuCheckbox) {
+        const menuList = document.querySelector('.menu__list');
+        const menuItems = menuList ? menuList.querySelectorAll('.menu__item') : [];
+        const tl = gsap.timeline({ paused: true, reversed: true });
+
+        if (menuItems.length) {
+            tl.fromTo(menuList, {
+                clipPath: 'circle(0% at 0% 0%)',
+            }, {
+                clipPath: 'circle(150% at 0% 0%)',
+                duration: 0.5,
+                ease: 'power3.inOut',
+            })
+            .from(menuItems, {
+                y: 30,
+                opacity: 0,
+                duration: 0.4,
+                stagger: 0.08,
+                ease: 'power2.out',
+            }, '-=0.3');
+
+            menuCheckbox.addEventListener('change', () => {
+                if (menuCheckbox.checked) {
+                    tl.play();
+                } else {
+                    tl.reverse();
+                }
+            });
+        }
+    }
 }
 
 export function renderFooter(social) {

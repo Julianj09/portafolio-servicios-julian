@@ -7,9 +7,9 @@
         "type": "Pregrado",
         "description": "Formación integral en el diseño, desarrollo e implementación de sistemas de información, bases de datos y arquitecturas de software escalables.",
         "achievements": [
-            "Promedio académico destacado entre los mejores de la cohorte.",
-            "Participación activa en semilleros de investigación sobre algoritmos y optimización.",
-            "Desarrollo de proyectos académicos enfocados en soluciones web y móviles."
+            "Rendimiento académico sobresaliente y constante desarrollo profesional.",
+            "Participación activa en festivales de tecnología y ferias de IA.",
+            "Desarrollo de proyectos académicos enfocados en resolución de problemas."
         ],
         "skills": [
             "Algoritmos y Estructuras de Datos",
@@ -25,6 +25,34 @@
         ],
         "location": "Pamplona, Norte de Santander",
         "link": "https://www.unipamplona.edu.co/"
+    },
+    {
+        "title": "Microsoft Business Analyst",
+        "institution": "Microsoft-Coursera",
+        "period": "2025 - Presente",
+        "status": "En curso",
+        "type": "Certificación Profesional",
+        "description": "Programa integral de 6 cursos en el ecosistema Microsoft para análisis empresarial: Excel avanzado, Power BI, Visio para modelado de procesos, Power Platform con low-code, y un capstone integrador con simulación real del examen PL-900.",
+        "achievements": [
+            "Técnicas de investigación y levantamiento de requerimientos con clientes y stakeholders usando BPMN.",
+            "Análisis de datos de negocio con Excel y modelado de procesos con Visio para identificar oportunidades de mejora.",
+            "Automatización de soluciones empresariales con Power Platform y diseño de dashboards en Power BI."
+        ],
+        "skills": [
+            "Business Analysis",
+            "Data Analysis",
+            "Requirements Gathering",
+            "Process Modeling",
+            "Low-Code Automation"
+        ],
+        "technologies": [
+            "Microsoft Excel",
+            "Power BI",
+            "Microsoft Visio",
+            "Power Platform"
+        ],
+        "location": "Remoto",
+        "link": "https://www.coursera.org/professional-certificates/microsoft-business-analyst"
     },
     {
         "title": "Especialización FrontEnd",
@@ -51,34 +79,7 @@
             "React"
         ],
         "location": "Remoto",
-        "link": "https://www.oracle.com/lad/education/oracle-next-education/",
-        "certificateUrl": "https://app.aluracursos.com/user/julian-j09/fullCertificate/..."
-    },
-    {
-        "title": "Google Ciberseguridad & IA",
-        "institution": "Google-Coursera",
-        "period": "2024 - Presente",
-        "status": "En curso",
-        "type": "Certificación",
-        "description": "Especialización en la protección de infraestructuras digitales y la implementación de soluciones de Inteligencia Artificial para la mitigación de riesgos.",
-        "achievements": [
-            "Análisis preventivo de vulnerabilidades en aplicaciones web.",
-            "Implementación de modelos básicos de IA para detección de intrusiones.",
-            "Uso de herramientas líderes como SQL, Python y Linux para seguridad."
-        ],
-        "skills": [
-            "Ciberseguridad",
-            "Inteligencia Artificial",
-            "Gestión de Riesgos",
-            "Protección de Datos"
-        ],
-        "technologies": [
-            "Python",
-            "Linux",
-            "SQL",
-            "PyTorch"
-        ],
-        "location": "Remoto",
-        "link": "https://www.coursera.org/google-certificates/cybersecurity-certificate"
+        "link": "https://www.aluracursos.com/",
+        "certificateUrl": "https://app.aluracursos.com/user/didierjuliantabacoduran/fullCertificate/960f6ac08b1ba63c8ee3d51f84586477"
     }
 ]

@@ -1,58 +1,197 @@
 {
     "tech": [
         {
-            "name": "HTML5",
-            "icon": "assets/images/skills/html5.svg"
+            "name": "Python",
+            "icon": "https://cdn.simpleicons.org/python"
         },
         {
-            "name": "CSS3",
-            "icon": "assets/images/skills/css3.svg"
+            "name": "FastAPI",
+            "icon": "https://cdn.simpleicons.org/fastapi"
         },
         {
-            "name": "Javascript",
-            "icon": "assets/images/skills/javascript.svg"
+            "name": "Node.js",
+            "icon": "https://cdn.simpleicons.org/nodedotjs"
         },
         {
             "name": "Java",
-            "icon": "assets/images/skills/java.svg"
+            "icon": "https://cdn.simpleicons.org/java"
         },
         {
-            "name": "Eclipse",
-            "icon": "assets/images/skills/eclipse.svg"
+            "name": "Spring Boot",
+            "icon": "https://cdn.simpleicons.org/springboot"
         },
         {
-            "name": "VScode",
-            "icon": "assets/images/skills/vscode.svg"
+            "name": "PHP",
+            "icon": "https://cdn.simpleicons.org/php"
         },
         {
-            "name": "VScommunity",
-            "icon": "assets/images/skills/vscommunity.svg"
+            "name": "React",
+            "icon": "https://cdn.simpleicons.org/react"
+        },
+        {
+            "name": "Vue.js",
+            "icon": "https://cdn.simpleicons.org/vuedotjs"
+        },
+        {
+            "name": "TypeScript",
+            "icon": "https://cdn.simpleicons.org/typescript"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "https://cdn.simpleicons.org/javascript"
+        },
+        {
+            "name": "HTML5",
+            "icon": "https://cdn.simpleicons.org/html5"
+        },
+        {
+            "name": "CSS3",
+            "icon": "https://cdn.simpleicons.org/css3"
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "https://cdn.simpleicons.org/postgresql"
+        },
+        {
+            "name": "Oracle Database",
+            "icon": "https://cdn.simpleicons.org/oracle"
+        },
+        {
+            "name": "MySQL",
+            "icon": "https://cdn.simpleicons.org/mysql"
+        },
+        {
+            "name": "MongoDB",
+            "icon": "https://cdn.simpleicons.org/mongodb"
+        },
+        {
+            "name": "Redis",
+            "icon": "https://cdn.simpleicons.org/redis"
+        },
+        {
+            "name": "Docker",
+            "icon": "https://cdn.simpleicons.org/docker"
         },
         {
             "name": "Git",
-            "icon": "assets/images/skills/git.svg"
+            "icon": "https://cdn.simpleicons.org/git"
         },
         {
-            "name": "Python",
-            "icon": "assets/images/skills/python.svg"
+            "name": "Linux",
+            "icon": "https://cdn.simpleicons.org/linux"
         },
         {
-            "name": "Jupyter",
-            "icon": "assets/images/skills/jupyter.svg"
+            "name": "LangChain",
+            "icon": "https://cdn.simpleicons.org/langchain"
+        },
+        {
+            "name": "Power BI",
+            "icon": "https://cdn.simpleicons.org/powerbi"
+        },
+        {
+            "name": "Selenium",
+            "icon": "https://cdn.simpleicons.org/selenium"
+        },
+        {
+            "name": "JWT",
+            "icon": "https://cdn.simpleicons.org/jsonwebtokens"
+        },
+        {
+            "name": "Cloud Firestore",
+            "icon": "https://cdn.simpleicons.org/firebase"
+        },
+        {
+            "name": "Postman",
+            "icon": "https://cdn.simpleicons.org/postman"
+        },
+        {
+            "name": "Business Analysis",
+            "icon": ""
+        },
+        {
+            "name": "BPMN",
+            "icon": ""
+        },
+        {
+            "name": "DFD",
+            "icon": ""
+        },
+        {
+            "name": "Requirements",
+            "icon": ""
+        },
+        {
+            "name": "RAG",
+            "icon": ""
+        },
+        {
+            "name": "NLP",
+            "icon": ""
+        },
+        {
+            "name": "Embeddings",
+            "icon": ""
+        },
+        {
+            "name": "FAISS",
+            "icon": ""
+        },
+        {
+            "name": "Prompt Engineering",
+            "icon": ""
+        },
+        {
+            "name": "Agile",
+            "icon": ""
+        },
+        {
+            "name": "REST APIs",
+            "icon": ""
+        },
+        {
+            "name": "CI/CD",
+            "icon": ""
+        },
+        {
+            "name": "Analytical Thinking",
+            "icon": ""
+        },
+        {
+            "name": "Problem Solving",
+            "icon": ""
+        },
+        {
+            "name": "Team Collaboration",
+            "icon": ""
+        },
+        {
+            "name": "Stakeholder Communication",
+            "icon": ""
+        },
+        {
+            "name": "Adaptability",
+            "icon": ""
+        },
+        {
+            "name": "Continuous Learning",
+            "icon": ""
         }
     ],
     "hobbies": [
         {
-            "name": "Jugar videojuegos",
-            "icon": "assets/images/hobbies/videogame.svg"
+            "name": "Senderismo"
         },
         {
-            "name": "Ver videos",
-            "icon": "assets/images/hobbies/youtube.svg"
+            "name": "Videojuegos"
         },
         {
-            "name": "Aprender",
-            "icon": "assets/images/hobbies/aprender.svg"
+            "name": "Tecnología"
+        },
+        {
+            "name": "Inteligencia Artificial"
+        },
+        {
+            "name": "Culturas"
         }
     ]
 }

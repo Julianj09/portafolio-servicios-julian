@@ -1,57 +1,93 @@
 .footer {
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(4px);
+    margin-top: clamp(3rem, 8vh, 6rem);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--clr-primary), var(--clr-accent), transparent);
+    opacity: 0.4;
+}
+
+.footer__inner {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: var(--section-padding) var(--container-padding);
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     text-align: center;
-    border-top: 1px solid var(--border-base);
-    background: var(--bg-surface-alt);
-    margin-top: clamp(5rem, 15vh, 10rem);
+    box-sizing: border-box;
 }
 
 .footer__copy {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     order: 2;
     font-weight: 500;
 }
 
 .footer__social {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     order: 1;
 }
 
 .footer__social a {
-    font-size: 2.2rem;
-    color: var(--text-main);
-    transition: var(--transition);
+    font-size: 1.8rem;
+    color: var(--text-muted);
     display: flex;
     align-items: center;
     justify-content: center;
+    will-change: transform;
+    position: relative;
 }
 
-.footer__social a:hover {
-    color: var(--clr-primary);
-    transform: translateY(-5px);
+.footer__social a::after {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease, background 0.3s ease;
 }
 
-[data-theme="dark"] .footer__social a:hover {
-    color: var(--clr-accent);
+.footer__social a:hover::after {
+    border-color: rgba(var(--clr-primary-rgb), 0.2);
+    background: rgba(var(--clr-primary-rgb), 0.05);
+}
+
+[data-theme="dark"] .footer__social a:hover::after {
+    border-color: rgba(var(--clr-accent-rgb), 0.2);
+    background: rgba(var(--clr-accent-rgb), 0.05);
 }
 
 @media screen and (min-width: 768px) {
-    .footer {
+    .footer__inner {
         flex-direction: row;
         justify-content: space-between;
+        gap: 2.5rem;
     }
 
     .footer__social {
         order: 2;
+        gap: 2.5rem;
     }
 
     .footer__copy {
         order: 1;
+    }
+
+    .footer__social a {
+        font-size: 2rem;
     }
 }

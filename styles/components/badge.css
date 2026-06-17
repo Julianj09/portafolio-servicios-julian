@@ -4,66 +4,86 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem 1.5rem;
-    background: var(--bg-surface);
-    border: 1px solid var(--border-base);
+    padding: 1rem 0.6rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--glass-border);
     box-shadow: var(--shadow-sm);
     border-radius: var(--radius-md);
-    transition: var(--transition);
+    cursor: default;
+    will-change: transform;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .skill-badge:hover {
-    background: var(--bg-surface-alt);
-    border-color: var(--clr-primary-light);
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-md);
+    border-color: rgba(var(--clr-primary-rgb), 0.4);
+    box-shadow: var(--shadow-glow);
 }
 
 .skill-badge__img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     object-fit: contain;
-    margin-bottom: 1.2rem;
-    transition: var(--transition);
-}
-
-.skill-badge:hover .skill-badge__img {
-    transform: scale(1.1);
+    margin-bottom: 0.5rem;
+    pointer-events: none;
+    will-change: transform;
 }
 
 .skill-badge__name {
     font-weight: 700;
     color: var(--text-main);
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    pointer-events: none;
 }
 
-/* Hobby Badge */
-.hobby-badge {
+@media screen and (min-width: 768px) {
+    .skill-badge {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .skill-badge__img {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .skill-badge__name {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skill-badge {
+        padding: 1.4rem 1rem;
+    }
+
+    .skill-badge__img {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Text-only skill tags */
+.skills__tags {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     justify-content: center;
-    background: var(--bg-surface-alt);
-    border: 1px solid var(--border-base);
-    padding: 0.9rem 1.4rem;
-    border-radius: var(--radius-sm);
-    transition: var(--transition);
-    gap: 0.8rem;
+    margin-top: 1.5rem;
 }
 
-.hobby-badge:hover {
-    background: var(--bg-surface);
-    border-color: var(--clr-accent);
-    transform: scale(1.05);
+.skill-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    padding: 0.25rem 0.7rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: transparent;
+    letter-spacing: 0.02em;
 }
 
-.hobby-badge__img {
-    height: 1.4rem;
-    opacity: 0.8;
-}
-
-.hobby-badge__name {
-    font-weight: 600;
-    color: var(--text-main);
-    font-size: 0.95rem;
-}
+/* Hobbies section uses .skill-tag from above */

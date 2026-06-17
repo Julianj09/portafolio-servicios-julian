@@ -8,6 +8,7 @@
 @import 'components/projects.css';
 @import 'components/badge.css';
 @import 'components/education.css';
+@import 'animations.css';
 
 html,
 body {

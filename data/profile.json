@@ -1,9 +1,9 @@
 {
     "name": "Julian Tabaco",
-    "role": "Desarrollador Front-End",
-    "description": "Actualmente, me dedico principalmente al desarrollo Front-End, donde me apasiona crear experiencias únicas, centradas por completo en mejorar la interacción del usuario.",
-    "about": "Soy programador originario de Nunchía, Casanare, actualmente estudiando Ingeniería en Sistemas en la Universidad de Pamplona, Colombia. A lo largo de mi trayectoria, he participado en diversos proyectos que abarcan el desarrollo de páginas web y aplicaciones de escritorio. Me especializo tanto en el desarrollo frontend como en el backend, incluyendo la gestión de bases de datos.\n\nMe encuentro haciendo especialización en Frontend con Alura Latam",
+    "role": "AI Engineer | Backend Developer | Business Analyst",
+    "description": "Estudiante de Ingeniería de Sistemas con perfil híbrido en Business Analysis y Software Engineering. Especializado en desarrollo backend, arquitecturas RAG y aplicaciones de IA con LLMs.",
+    "about": "Ingeniero en formación con perfil híbrido en Business Analysis y Software Engineering. Combino el análisis de negocio con el desarrollo backend en Python, Java y Spring Boot, arquitecturas RAG para aplicaciones de IA con LLMs, y gestión de proyectos con metodologías ágiles. He participado como Product Owner y Business Analyst en proyectos como CupidoUP, abarcando desde el levantamiento de requerimientos con BPMN hasta el diseño arquitectónico y despliegue en producción. Mi enfoque está en construir soluciones escalables que conecten las necesidades del negocio con la implementación técnica.",
     "location": "Colombia",
-    "cvPath": "assets/documents/cvJulian.pdf",
+    "cvPath": "assets/documents/CV_IngSistemas_DidierJulianTabacoDuran.pdf",
     "profileImage": "assets/images/personal/profile.webp"
 }

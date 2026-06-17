@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Julian Tabaco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Julian Tabaco - Desarrollador Front-End">
+    <meta name="description" content="Portafolio profesional de Julian Tabaco - AI Engineer | Backend Developer | Business Analyst">
     <meta property="og:type" content="website">
 
     <link rel="shortcut icon" href="assets/images/logo-portafolio-julian.webp" type="image/webp">
@@ -20,34 +20,34 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles/main.css">
 
-    <!-- SweetAlert2 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
     <!-- Menú -->
     <header class="menu container">
-        <h2 class="menu__logo">Julian T.</h2>
+        <div class="menu__inner">
+            <h2 class="menu__logo">Julian T.</h2>
 
-        <div class="menu__actions">
-            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
-                <i class="uil uil-moon"></i>
-            </button>
-            <label for="menu__bar" class="menu__toggle-label">&#9776;</label>
+            <input type="checkbox" id="menu__bar">
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#education">Formación</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#projects">Proyectos</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu__actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <label for="menu__bar" class="menu__toggle-label">&#9776;</label>
+            </div>
         </div>
-
-        <input type="checkbox" id="menu__bar">
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
-                <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-                <li class="menu__item"><a class="menu__link" href="#education">Formación</a></li>
-                <li class="menu__item"><a class="menu__link" href="#projects">Proyectos</a></li>
-                <li class="menu__item"><a class="menu__link" href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -70,11 +70,14 @@
                 <div class="skills__container">
                     <!-- Contenido dinámico -->
                 </div>
+                <div class="skills__tags">
+                    <!-- Skills sin icono -->
+                </div>
             </div>
 
             <div class="skills__hobbies">
                 <h3 class="section-title">Hobbies</h3>
-                <div class="skills__container">
+                <div class="skills__tags">
                     <!-- Contenido dinámico -->
                 </div>
             </div>
@@ -98,10 +101,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer container">
-        <p class="footer__copy">&copy; Desarrollado por Julian Tabaco 2024</p>
-        <div class="footer__social">
-            <!-- Contenido dinámico -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copy">&copy; Desarrollado por Julian Tabaco 2026</p>
+            <div class="footer__social">
+                <!-- Contenido dinámico -->
+            </div>
         </div>
     </footer>
 

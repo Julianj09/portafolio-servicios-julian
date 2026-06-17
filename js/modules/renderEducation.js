@@ -21,12 +21,12 @@ export function renderEducation(education) {
     const render = () => {
         const slice = educationData.slice(0, visibleEducation);
 
-        educationContainer.innerHTML = slice.map(item => {
+        educationContainer.innerHTML = slice.map((item, i) => {
             const statusClass = item.status.toLowerCase().replace(/\s+/g, '-');
             const isFinished = item.status.toLowerCase() === 'finalizado';
 
             return `
-            <details class="education__card">
+            <details class="education__card" data-gsap="edu-card" data-index="${i}">
                 <summary class="education__summary">
                     <div class="education__summary-content">
                         <div class="education__header-top">
@@ -103,7 +103,23 @@ export function renderEducation(education) {
         `}).join('');
 
         updateControls();
+        animateNewCards();
     };
+
+    function animateNewCards() {
+        if (typeof gsap === 'undefined') return;
+        const newCards = educationContainer.querySelectorAll('[data-gsap="edu-card"]');
+        if (!newCards.length) return;
+
+        gsap.fromTo(newCards,
+            { y: 30, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: 'power3.out', overwrite: true }
+        );
+
+        if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.refresh();
+        }
+    }
 
     const updateControls = () => {
         const hasMore = visibleEducation < educationData.length;
