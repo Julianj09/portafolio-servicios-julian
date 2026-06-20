@@ -1,9 +1,9 @@
 {
     "name": "Julian Tabaco",
-    "role": "AI Engineer | Backend Developer | Business Analyst",
-    "description": "Estudiante de Ingeniería de Sistemas con perfil híbrido en Business Analysis y Software Engineering. Especializado en desarrollo backend, arquitecturas RAG y aplicaciones de IA con LLMs.",
-    "about": "Ingeniero en formación con perfil híbrido en Business Analysis y Software Engineering. Combino el análisis de negocio con el desarrollo backend en Python, Java y Spring Boot, arquitecturas RAG para aplicaciones de IA con LLMs, y gestión de proyectos con metodologías ágiles. He participado como Product Owner y Business Analyst en proyectos como CupidoUP, abarcando desde el levantamiento de requerimientos con BPMN hasta el diseño arquitectónico y despliegue en producción. Mi enfoque está en construir soluciones escalables que conecten las necesidades del negocio con la implementación técnica.",
+    "role": "Systems Engineer | Business Analyst | AI Integration",
+    "description": "Estudiante de Ingeniería de Sistemas con perfil híbrido en Business Analysis y Software Engineering. Especializado en toma de requerimientos, desarrollo backend, arquitecturas RAG y aplicaciones de IA con LLMs.",
+    "about": "Ingeniero de Sistemas con un perfil híbrido, orientado a cerrar la brecha crítica entre la estrategia de producto y la ejecución técnica de alto nivel. Poseo una sólida trayectoria en el levantamiento de requerimientos complejos, modelado de procesos bajo estándares BPMN y gestión integral de productos desde una visión analítica. Esta base estratégica se complementa con un dominio técnico avanzado en desarrollo backend y la integración de arquitecturas de Inteligencia Artificial, con especialización en sistemas RAG y despliegue de soluciones escalables. Mi enfoque se centra en construir sistemas que no solo sean técnicamente robustos y eficientes, sino que aporten un valor de negocio medible y sostenible. Mediante la aplicación rigurosa de metodologías ágiles, buenas prácticas de arquitectura de software y un enfoque constante en la innovación, garantizo soluciones que maximizan la calidad, la mantenibilidad y la eficiencia operativa en cada etapa del ciclo de vida del desarrollo.",
     "location": "Colombia",
-    "cvPath": "assets/documents/CV_IngSistemas_DidierJulianTabacoDuran.pdf",
+    "cvPath": "assets/documents/CV_Ingeniero_DidierTabaco.pdf",
     "profileImage": "assets/images/personal/profile.webp"
 }

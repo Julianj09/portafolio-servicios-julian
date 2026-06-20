@@ -109,6 +109,10 @@
             "icon": ""
         },
         {
+            "name": "Product Owner",
+            "icon": ""
+        },
+        {
             "name": "BPMN",
             "icon": ""
         },
@@ -117,7 +121,7 @@
             "icon": ""
         },
         {
-            "name": "Requirements",
+            "name": "Requirements Elicitation",
             "icon": ""
         },
         {
@@ -141,7 +145,7 @@
             "icon": ""
         },
         {
-            "name": "Agile",
+            "name": "Agile (Scrum)",
             "icon": ""
         },
         {
@@ -165,7 +169,7 @@
             "icon": ""
         },
         {
-            "name": "Stakeholder Communication",
+            "name": "Stakeholder Management",
             "icon": ""
         },
         {
